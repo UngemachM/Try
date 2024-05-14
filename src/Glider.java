@@ -12,4 +12,10 @@ public class Glider {
     public void addControllstick(Controllstick controllstick){
         body.addControllstick(controllstick);
     }
+
+    public void addSeat(Seat seat, int i){
+       body.addSeat(seat, i);
+    }
+
+
 }

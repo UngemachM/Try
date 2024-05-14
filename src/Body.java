@@ -2,6 +2,8 @@ import java.awt.*;
 
 public class Body {
     private Cockpit cockpit;
+    private Wing leftWing;
+    private Wing rightWing;
 
     public Body() {
         cockpit = new Cockpit();
@@ -13,6 +15,8 @@ public class Body {
 
     public void addControllstick( Controllstick controllstick ){
         cockpit.setControllstick(controllstick);
-        controllstick.setCockpit(cockpit);
+    }
+    public void addSeat(Seat seat, int i) {
+        cockpit.setSeat(seat,i);
     }
 }
