@@ -17,7 +17,9 @@ public class Application {
         System.out.println("servus");
 
         Glider glider = new Glider();
-        Controllstick controllstick = new Controllstick();
+        FlightManagment flightManagment = new FlightManagment(glider);
+
+        Controllstick controllstick = new Controllstick(flightManagment);
 
         glider.addControllstick(controllstick);
 
@@ -25,8 +27,7 @@ public class Application {
 
         glider.addWings(new Wing(), new Wing());
 
-        FlightManagment flightManagment = new FlightManagment(glider);
-        flightManagment.executeClimb();
-        flightManagment.executeSink();
+        controllstick.pull();
+        controllstick.push();
     }
 }
