@@ -19,4 +19,12 @@ public class Body {
     public void addSeat(Seat seat, int i) {
         cockpit.setSeat(seat,i);
     }
+    public void addLeftWing(Wing wing){
+        leftWing=wing;
+        wing.setPosition(WingPosition.LEFT);
+    }
+    public void addRightWing(Wing wing){
+        rightWing=wing;
+        wing.setPosition(WingPosition.RIGHT);
+    }
 }

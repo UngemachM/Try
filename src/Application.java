@@ -14,5 +14,7 @@ public class Application {
         glider.addControllstick(controllstick);
 
         buildSeats(glider);
+
+        glider.addWings(new Wing(),new Wing());
     }
 }

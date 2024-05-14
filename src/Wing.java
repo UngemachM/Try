@@ -1,11 +1,11 @@
 public class Wing {
-    private  WingPosotion posotion;
+    private WingPosition posotion;
 
-    public WingPosotion getPosotion() {
+    public WingPosition getPosotion() {
         return posotion;
     }
 
-    public void setPosotion(WingPosotion posotion) {
+    public void setPosition(WingPosition posotion) {
         this.posotion = posotion;
     }
 }
