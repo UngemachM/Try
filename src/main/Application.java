@@ -2,6 +2,7 @@ package main;
 
 import cockpit.Controllstick;
 import cockpit.Seat;
+import flightmanagment.FlightManagment;
 import shared.Configuration;
 import wing.Wing;
 
@@ -23,5 +24,9 @@ public class Application {
         buildSeats(glider);
 
         glider.addWings(new Wing(), new Wing());
+
+        FlightManagment flightManagment = new FlightManagment(glider);
+        flightManagment.executeClimb();
+        flightManagment.executeSink();
     }
 }
