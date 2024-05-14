@@ -1,6 +1,10 @@
+package cockpit;
+
+import shared.Configuration;
+
 public class Cockpit {
     private Controllstick controllstick;
-    private Seat[] seats;
+    private final Seat[] seats;
 
     public Cockpit() {
         seats = new Seat[Configuration.INSTANCE.countSeats];
